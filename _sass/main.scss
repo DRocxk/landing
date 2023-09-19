@@ -20,7 +20,7 @@ $card-bg-color: linear-gradient(
   rgba(115, 115, 115, 0.15) 15%,
   rgba(43, 45, 47, 1) 80%
 );
-$primary-color: #ff073a;
+$primary-color: #060372;
 
 /* General */
 
@@ -243,7 +243,7 @@ a {
   padding: 0.5rem;
   position: absolute;
   right: 0;
-  top: 40%;
+  top: 10%;
 }
 
 .landing-icons {
@@ -303,6 +303,16 @@ a {
     }
   }
 
+  .htb:hover {
+    .circle {
+      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+        colorHtb 1s linear forwards;
+    }
+    .social-svg {
+      fill: #0ffc29;
+    }
+  }
+
   .email:hover {
     .circle {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
@@ -356,6 +366,12 @@ a {
   @keyframes colorBlackIcon {
     to {
       stroke: #000;
+    }
+  }
+
+  @keyframes colorHtb {
+    to {
+      stroke: #0ffc29;
     }
   }
 
